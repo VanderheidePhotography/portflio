@@ -1,0 +1,1109 @@
+/* Resetting default margin/padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full-screen setup */
+html, body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Allow vertical stacking */
+    background-color: #333;
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* hide page scrollbar */
+html { scrollbar-width: none; } /* Firefox */
+body { -ms-overflow-style: none; } /* IE and Edge */
+body::-webkit-scrollbar, body::-webkit-scrollbar-button { display: none; } /* Chrome */
+/* end hide page scrollbar */
+
+html { scroll-behavior: smooth; }
+
+/* Logo fixed in top-left corner */
+#logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px; /* Adjust the size of the logo */
+    height: auto;
+    z-index: 999; /* Ensure the logo is above other elements */
+}
+
+
+/* General Overlay Button Styling */
+#section10 a {
+    position: relative;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 50px;
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+/* Smaller Screens */
+@media (max-width: 480px) {
+    #section10 a {
+        left: 50%; /* Ensure it remains centered */
+        transform: translateX(-50%);
+    }
+}
+
+/* Styling for the Span Inside the Button */
+#section10 a span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 30px;
+    height: 50px;
+    margin-left: -15px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    box-sizing: border-box;
+}
+
+#section10 a span::before {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    content: '';
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    background-color: #fff;
+    border-radius: 100%;
+    animation: sdb10 2s infinite;
+    box-sizing: border-box;
+}
+
+  
+  #section10 a span::before {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    content: '';
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    background-color: #fff;
+    border-radius: 100%;
+    animation: sdb10 2s infinite;
+    box-sizing: border-box;
+  }
+  
+  #section102 a {
+    padding-top: 60px;
+  }
+/* Overlay Button Styling */
+#section102 a {
+    position: relative;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 50px;
+    z-index: 1000; /* Make sure it appears above other elements */
+}
+  
+  
+  #section102 a span {
+    position: absolute;
+    top: 12vh;
+    left: 50%;
+    width: 30px;
+    height: 50px;
+    margin-left: -15px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    box-sizing: border-box;
+    padding-bottom: 5%;
+    padding-top: 5%;
+  }
+
+  #section102 a span {
+    position: absolute;
+    top: 12vh; /* Keeps the button positioned below the header */
+    left: 50%; /* Centers horizontally */
+    width: 30px;
+    height: 50px;
+    margin-left: -15px; /* Offset for centering */
+    border: 2px solid #fff;
+    border-radius: 50px;
+    box-sizing: border-box;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+
+@media (min-width: 1024px) { #section102 a span {
+    position: absolute;
+    top: 25vh; /* Keeps the button positioned below the header */
+    left: 50%; /* Centers horizontally */
+    width: 30px;
+    height: 50px;
+    margin-left: -15px; /* Offset for centering */
+    border: 2px solid #fff;
+    border-radius: 50px;
+    box-sizing: border-box;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+}
+
+/* Tablet screens (max-width: 768px) */
+@media (max-width: 768px) {
+    #section102 a span {
+        top: 15vh; /* Adjust position for tablets */
+        width: 25px; /* Reduce size slightly */
+        height: 40px;
+        margin-left: -12.5px; /* Recalculate offset for smaller size */
+    }
+}
+
+/* Small phones (max-width: 576px) */
+@media (max-width: 576px) {
+    #section102 a span {
+        top: 18vh; /* Adjust vertical positioning */
+        width: 20px; /* Reduce size further for smaller screens */
+        height: 35px;
+        margin-left: -10px; /* Recalculate offset for new width */
+    }
+}
+
+/* Very small phones (max-width: 400px) */
+@media (max-width: 400px) {
+    #section102 a span {
+        top: 20vh; /* Position button further down */
+        width: 18px; /* Minimized size for very small screens */
+        height: 30px;
+        margin-left: -9px; /* Adjust offset */
+    }
+}
+
+  
+  #section102 a span::before {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    content: '';
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    background-color: #fff;
+    border-radius: 100%;
+    animation: sdb10 2s infinite;
+    box-sizing: border-box;
+  }
+
+/* Overlay Button Styling */
+#section103 a {
+    position: absolute;
+    bottom: 10px; /* Adjust the space from the bottom of the screen */
+    left: 50%;
+    transform: translateX(-50%); /* Center the button horizontally */
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background-color: #ffffff;  /* Circle color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 11000; /* Ensure it is above other elements */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Optional: adds a shadow effect */
+}
+
+
+@media (min-width: 1024px) { #section103 a {
+    position: absolute;
+    bottom: 65px; /* Adjust the space from the bottom of the screen */
+    left: 50%;
+    transform: translateX(-50%); /* Center the button horizontally */
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background-color: #ffffff;  /* Circle color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 11000; /* Ensure it is above other elements */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Optional: adds a shadow effect */
+}
+}
+
+@media (min-width: 2560px) { #section103 a {
+    position: absolute;
+    bottom: 33%; /* Adjust the space from the bottom of the screen */
+    left: 50%;
+    transform: translateX(-50%); /* Center the button horizontally */
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background-color: #ffffff;  /* Circle color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 11000; /* Ensure it is above other elements */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Optional: adds a shadow effect */
+}
+}
+
+
+/* The arrow inside the button */
+#section103 a span {
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid #1875ff; /* This is the arrow */
+    position: relative;
+    top: 0; /* Adjust this if needed to center it vertically */
+}
+
+
+#section103 a:hover {
+    background-color: #007BFF;  /* Hover color */
+}
+
+#section103 a:hover span {
+    border-bottom-color: #fff;  /* Maintain the arrow color on hover */
+}
+
+  /* Keyframe Animation */
+  @keyframes sdb10 {
+    0% {
+      opacity: 0;
+      transform: translateY(0);
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  }
+
+/* Portfolio container with CSS Grid */
+.portfolio-container {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;  /* Split into 3 equal vertical columns */
+    grid-template-rows: 100vh 100vh 100vh; /* Ensure full height for each slice */
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Each photo slice */
+.photo {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translateY(-100%); /* Initially offscreen */
+    transition: transform 1s cubic-bezier(0.25, 0.8, 0.25, 1); /* Smooth transition */
+}
+
+/* Styling for images */
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Text overlay */
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Typewriter effect */
+#text {
+    font-family: 'Arial', sans-serif;
+    font-size: 3rem;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #fff; /* Cursor effect */
+    display: inline-block;
+}
+
+/* Cursor line */
+#cursor-line {
+    width: 2px;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: left 0.2s ease;
+}
+
+
+
+/* Add bounce effect to the photos */
+@keyframes bounce {
+    0% {
+        transform: translateY(-100%);
+    }
+    50% {
+        transform: translateY(15%);
+    }
+    70% {
+        transform: translateY(-10%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Apply the bounce effect to the photos with delays for domino effect */
+#photo1 {
+    animation: bounce 1.2s ease forwards;
+}
+
+#photo2 {
+    animation: bounce 1.2s ease 0.3s forwards;
+}
+
+#photo3 {
+    animation: bounce 1.2s ease 0.6s forwards;
+}
+/* Adjust styles for smaller screens */
+/* Default styles */
+#photo3 {
+    position: relative;
+    overflow: hidden; /* Ensure no part of the image extends outside the container */
+    width: 100%; /* Make it responsive */
+    height: auto; /* Adjust height based on content */
+}
+
+#photo3 img {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: 100%; /* Ensure the image scales properly */
+}
+
+
+
+/* Adjustments for smaller screens */
+@media (max-width: 1200px) {
+    #photo3 img {
+        left: 570px; /* Shift horizontally for better alignment */
+        transform: translate(-90%, -50%); /* Keep vertical alignment intact */
+    }
+}
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    #photo3 img {
+        left: 450px; /* Shift horizontally for better alignment */
+        transform: translate(-90%, -50%); /* Keep vertical alignment intact */
+    }
+}
+
+/* Small phones (max-width: 576px) */
+@media (max-width: 576px) {
+    #photo3 img {
+        left: 280px; /* Adjust horizontal alignment further */
+        transform: translate(-80%, -50%);
+    }
+}
+
+/* Very small phones (max-width: 400px) */
+@media (max-width: 400px) {
+    #photo3 img {
+        left: 220px; /* Refine alignment */
+        transform: translate(-75%, -50%);
+    }
+}
+
+/* Very small phones (max-width: 400px) */
+@media (max-width: 320px) {
+    #photo3 img {
+        left: 200px; /* Refine alignment */
+        transform: translate(-75%, -50%);
+    }
+}
+/* New section for more info */
+#more-info {
+    background-image: url('images/DSCF2259.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    min-height: 100vh; /* Full screen height, allows scrolling */
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;  /* Center content horizontally */
+    align-items: center;      /* Center content vertically */
+    flex-direction: column;   /* Stack content vertically */
+}
+
+#more-info h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#more-info p {
+    font-family: "Kanit", sans-serif;
+}
+
+.kanit-medium {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+#more-info p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* Button Container - Centered and Stylish */
+.button-container {
+    position: absolute;
+    top: 50%; /* Position the buttons vertically at the center */
+    left: 50%; /* Position buttons horizontally at the center */
+    transform: translate(-50%, -50%); /* Ensure the container is perfectly centered */
+    display: flex;
+    gap: 20px; /* Space between the buttons */
+    z-index: 1000; /* Ensure buttons stay above other elements */
+}
+
+/* Fancy Button Styling */
+.button-container button {
+    background: linear-gradient(178deg, #9885ffd9, #36529c);
+    color: white; /* Button text color */
+    font-size: 16px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px; /* Rounded corners */
+    cursor: pointer;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.3); /* 3D shadow effect */
+    transition: all 0.3s ease; /* Smooth transition for interactions */
+}
+
+/* Hover and Active Effects */
+.button-container button:hover {
+    background: linear-gradient(145deg, #5560ea, #497dffce); /* Reverse gradient on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 -6px 10px rgba(255, 255, 255, 0.4); /* Hover shadow */
+    transform: translateY(-4px); /* Lift effect */
+}
+
+.button-container button:active {
+    background: linear-gradient(145deg, #5560ea, #497dffce); /* Active gradient */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Active shadow */
+    transform: translateY(2px); /* Slight press effect */
+}
+
+
+/* Style for the dynamic buttons */
+#dynamic-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#dynamic-buttons button {
+    margin: 0 10px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#dynamic-buttons button:hover {
+    background-color: #555;
+}
+
+/* New section for main content (welcome and buttons) */
+#main-content {
+    position: absolute;
+    top: 100vh; /* Start below the viewport */
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    padding: 50px 0;
+    z-index: 100;
+    opacity: 0;
+    transition: opacity 1s ease-out, top 1s ease-out;
+}
+
+/* Heading and Paragraph styling */
+#main-content h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    color: #222; /* Dark text */
+}
+
+#main-content p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    color: #555; /* Lighter text for the paragraph */
+}
+
+/* Buttons container */
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Fancy Buttons */
+.button {
+    background-color: #333; /* Dark background */
+    color: #100f0f; /* White text */
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 50px; /* Rounded edges for a sleek look */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #555; /* Slightly lighter on hover */
+    transform: translateY(-5px); /* Slight hover lift effect */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Animation for sliding down the main content */
+@keyframes slideDown {
+    0% {
+        top: 100vh;
+        opacity: 0;
+    }
+    100% {
+        top: 50vh;
+        opacity: 1;
+    }
+}
+
+/* Apply the slide-down animation */
+#main-content {
+    animation: slideDown 1s ease-out forwards;
+}
+
+/* Full-screen background photo */
+#background-photo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Make sure the background photo is behind other content */
+}
+
+#bg-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the photo covers the entire background */
+}
+
+/* Style for the welcome text */
+#text-container {
+    position: relative;
+    z-index: 999; /* Ensure text is on top of the background */
+}
+
+#text-container h1 {
+    font-size: 2.5rem; /* Adjust the font size as needed */
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 30px; /* Space between the title and buttons */
+}
+/* Adjust #text-container h1 for smaller screens */
+@media (max-width: 768px) {
+    #text-container h1 {
+        font-size: 1.8rem; /* Scale down font size for smaller screens */
+        margin-bottom: 20px; /* Adjust spacing to prevent overcrowding */
+        line-height: 1.2; /* Adjust line height for better readability */
+        word-wrap: break-word; /* Ensure long words are wrapped */
+        text-align: center; /* Keep the text centered on the screen */
+    }
+}
+
+/* Further scaling for very small screens */
+@media (max-width: 480px) {
+    #text-container h1 {
+        font-size: 1.5rem; /* Further reduce font size for small devices */
+        margin-bottom: 15px; /* Adjust spacing accordingly */
+    }
+}
+
+/* Further scaling for very small screens */
+@media (max-width: 320px) {
+    #text-container h1 {
+        font-size: 1rem; /* Further reduce font size for small devices */
+        margin-bottom: 15px; /* Adjust spacing accordingly */
+    }
+}
+
+
+/* Centered H1 Text only on the top page */
+h1 {
+    position: absolute; /* Position relative to the nearest positioned ancestor */
+    top: 50%; /* Vertically center it */
+    left: 50%; /* Horizontally center it */
+    transform: translate(-50%, -50%); /* Adjust the centering */
+    color: white; /* Text color */
+    font-size: 48px; /* Adjust font size as needed */
+    text-align: center; /* Center text alignment */
+    z-index: 999; /* Ensure it stays above other content */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any padding */
+    pointer-events: none; /* Prevent interaction with text (optional) */
+}
+
+
+
+
+/* Buttons Container */
+#buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+}
+
+#buttons-container button {
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#buttons-container button:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* More Info Section */
+#more-info {
+    padding: 0;
+    background-color: #f7f7f7;
+    text-align: center;
+    flex-grow: 1; /* Take up the remaining space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#more-info h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+
+#more-info p {
+    font-size: 1rem;
+}
+
+/* Scroll Down Button Style (Positioned at bottom center) */
+.scroll-down-btn {
+    position: absolute;
+    bottom: 20px; /* Position it at the bottom */
+    left: 50%;
+    transform: translateX(-50%); /* Center the button horizontally */
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1000; /* Ensure it stays on top of other elements */
+}
+
+.scroll-down-btn:hover {
+    background-color: #555;
+}
+
+
+.overlay-button {
+    background-color: #4CAF50; /* Green color for Contact button */
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+    margin: 10px; /* Add spacing between buttons */
+    display: inline-block; /* Ensure buttons are inline */
+}
+
+#btn2 {
+    background-color: #000000; /* Blue color for Photo Gallery button */
+}
+
+.overlay-button:hover {
+    transform: scale(1.1); /* Enlarge on hover */
+}
+
+.button-container {
+    position: absolute; /* Positioned relative to its parent container */
+    top: 58%; /* Stick to the top of the parent container */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Correct centering */
+    z-index: 1000; /* Keep it on top of other content */
+    display: flex; /* Use flexbox to arrange buttons horizontally */
+    justify-content: center; /* Center buttons horizontally within the container */
+    width: auto; /* Allow width to adjust based on content */
+    box-sizing: border-box; /* Include padding in width calculation */
+    gap: 20px; /* Space between the buttons */
+}
+
+
+
+
+/* Add a container with padding or margin on top to simulate the main page area */
+.main-content {
+    padding-top: 100px; /* Adjust this value to create space for the buttons */
+}
+
+
+/* Styling for the Down button */
+.down-button {
+    position: fixed;
+    top: 85%; /* Adjust to position it lower */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    z-index: 1000;
+}
+
+.down-button:hover {
+    background-color: #45a049;
+}
+
+/* Enable smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Ensure the contact page takes full height */
+#contact-form {
+    position: relative;        /* Relative positioning to keep it within the page flow */
+    width: 100%;               /* Full width of the parent container */
+    min-height: 100vh;
+    padding-bottom: 12px;         /* Ensure it spans the full viewport height */
+    display: flex;             /* Enable flexbox for centering */
+    flex-direction: column;    /* Stack elements vertically */
+    justify-content: center;   /* Center content vertically */
+    align-items: center;       /* Center content horizontally */
+    background-image: url('images/DSCF4960\ 1.jpg');
+    background-size: 100%; /* Cover the full width and auto height */
+    height: 100vh; /* Full height of the viewport */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px; /* Set a specific height */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+    overflow: hidden;          /* Prevent any scrolling inside the form */
+    z-index: 1;                /* Place it above general content but below fixed headers */
+}
+
+
+/* Default setup for larger screens */
+#contact-form {
+    background-image: url('images/DSCF4830.jpg');
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    height: 100vh; /* Full height of the viewport */
+}
+
+/* For smaller screens, you may want to adjust the size or change the image */
+@media screen and (max-width: 768px) {
+    #contact-form {
+
+        background-position: top; /* Position the image at the top */
+        height: auto; /* Allow the height to be auto adjusted */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #contact-form {
+        background-image: url('images/DSCF4830.jpg'); /* Use a different image for smaller screens */
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#contact-section {
+    position: relative;        /* Keep it at the bottom but part of the natural page flow */
+    margin-top: auto;          /* Push the contact section to the bottom of the document */
+}
+
+
+
+/* Contact form styling */
+#contact-form h2 {
+    text-align: center;
+    font-size: 2.5em;         /* Adjust the size of the title */
+    margin-bottom: 20px;      /* Add space below the title */
+    color: #f7f7f7;
+}
+
+#contact-form form {
+
+    flex-direction: column;
+    width: 60%;      
+    height: 71%;         /* Adjust the form width */
+    max-width: 600px;         /* Max width for larger screens */
+    margin: 0 auto;           /* Center the form */
+    background-color: #fff;   /* White background for the form */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+    border-radius: 8px;       /* Rounded corners */
+}
+
+#contact-form input,
+#contact-form textarea {
+    
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;      /* Space between form elements */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#contact-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#contact-form button:hover {
+    background-color: #45a049;
+}
+
+
+/* Contact Form Section */
+#contact-form-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #eaeaea;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+#contact-form-section form {
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjust for tablets and smaller screens */
+@media (max-width: 2560px) {
+    #contact-form form {
+        width: 80%;           /* Make the form wider on tablets */
+        height: auto;         /* Let the height adjust based on content */
+        padding: 15px;        /* Reduce padding for smaller screens */
+    }
+}
+
+/* Adjust for mobile screens */
+@media (max-width: 1440px) {
+    #contact-form form {
+        width: 90%;           /* Allow the form to take up more width */
+        padding: 10px;        /* Less padding on mobile */
+        height: auto;         /* Let the form expand based on content */
+    }
+}
+/* Adjust for tablets and smaller screens */
+@media (max-width: 768px) {
+    #contact-form form {
+        width: 80%;           /* Make the form wider on tablets */
+        height: auto;         /* Let the height adjust based on content */
+        padding: 15px;        /* Reduce padding for smaller screens */
+    }
+}
+
+/* Adjust for mobile screens */
+@media (max-width: 480px) {
+    #contact-form form {
+        width: 90%;           /* Allow the form to take up more width */
+        height: 50%;
+        padding: 10px;        /* Less padding on mobile */
+        height: auto;         /* Let the form expand based on content */
+    }
+}
+#contact-form-section form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#contact-form-section form input,
+#contact-form-section form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#contact-form-section form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form-section form button:hover {
+    background-color: #555;
+}
+
+
+
+
+
+
+
+
+
+
+
+#more-info {
+    width: 100%; /* Ensures the section takes up full width */
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Optionally centers content vertically */
+}
+
+#more-info p {
+    max-width: 800px; /* Limits width for better readability */
+    padding-left: 20px; /* Adds space on the left */
+    padding-right: 20px; /* Adds space on the right */
+    margin: 0 auto; /* Centers the text within its container */
+    text-align: justify; /* Optional: Makes the text alignment uniform */
+}
+
+/* Tablet screens (max-width: 768px) */
+@media (min-width: 1440px) {
+    #more-info p {
+        max-width: 900px; /* Reduce the max width for smaller screens */
+        padding-left: 15px; /* Adjust padding for medium screens */
+        padding-right: 15px;
+        font-size: 24px;
+    }
+}
+
+/* Tablet screens (max-width: 768px) */
+@media (max-width: 768px) {
+    #more-info p {
+        max-width: 600px; /* Reduce the max width for smaller screens */
+        padding-left: 15px; /* Adjust padding for medium screens */
+        padding-right: 15px;
+    }
+}
+
+/* Small phones (max-width: 576px) */
+@media (max-width: 576px) {
+    #more-info p {
+        max-width: 100%; /* Use percentage for dynamic resizing */
+        max-height: 70%;
+        font-size: 12px;
+        padding-left: 12px; /* Further reduce padding for small screens */
+        padding-right: 12px;
+    }
+}
+
+/* Very small phones (max-width: 400px) */
+@media (max-width: 400px) {
+    #more-info p {
+        max-width: 100%; /* Full width for very small screens */
+        padding-left: 12px; /* Minimal padding for narrow devices */
+        padding-right: 12px;
+        font-size: 12px; /* Reduce font size slightly for readability */
+    }
+}
+
+
+
+
+
+
+
+#contact-info {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: #ffffff; /* Adjust as per your theme */
+}
+
+#contact-info a {
+    color: #1875ff; /* Highlight the phone number */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact-info a:hover {
+    text-decoration: underline; /* Add hover effect */
+}
